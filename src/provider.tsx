@@ -92,7 +92,7 @@ export function MagicProvider(props: PropsWithChildren<MagicProviderProps>) {
   // Context consumer rerender fix
   // https://reactjs.org/docs/context.html#caveats
   useEffect(() => {
-    setContextValues((contextValues) => ({
+    setContextValues(contextValues => ({
       ...contextValues,
       ...state,
       login,
