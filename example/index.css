@@ -1,0 +1,70 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2em;
+  padding: 16px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+article,
+main {
+  box-sizing: border-box;
+  margin: 3em auto;
+}
+
+article {
+  max-width: 57ch;
+}
+
+main {
+  padding: 1.5em;
+  width: fit-content;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 0 0 21px gainsboro;
+}
+
+main > p {
+  margin: 0;
+}
+
+form {
+  display: block;
+  text-align: left;
+  margin: 2em auto 0 auto;
+  width: fit-content;
+  font-size: 0.7em;
+}
+
+section {
+  margin-top: 0.5em;
+  width: fit-content;
+  border: 3px solid blanchedalmond;
+}
+
+main > section {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  padding: 1em;
+  border-radius: none;
+  font-size: 0.9rem;
+}
+
+input {
+  width: 200px;
+}
+
+button {
+  background: blanchedalmond;
+  color: black;
+}

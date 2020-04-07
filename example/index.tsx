@@ -13,40 +13,46 @@ function DemoComponent() {
 
   if (status === 'errored') {
     return (
-      <div>
+      <>
         <p>Uh oh, an error occurred</p>
         <p>{JSON.stringify(error)}</p>
-      </div>
+      </>
     )
   }
 
   if (status === 'authenticated') {
     return (
-      <div>
+      <>
         <p>Surprise!</p>
-        <button onClick={logout}>Log Out</button>
-      </div>
+        <section>
+          <button onClick={logout}>Log Out</button>
+        </section>
+      </>
     )
   }
 
   return (
-    <div>
-      <p>If you sign in, I'll show you a surprise.</p>
+    <>
+      <p>If you log in, I'll show you a surprise.</p>
       <form
         onSubmit={(e) => {
           e.preventDefault()
           login({ email })
         }}
       >
-        <input
-          required
-          type="text"
-          placeholder="example@example.com"
-          onChange={(e) => setEmail(e.currentTarget.value)}
-        />
-        <button>Log In</button>
+        <label htmlFor="email">Email</label>
+        <section>
+          <input
+            required
+            type="text"
+            name="email"
+            placeholder="example@example.com"
+            onChange={(e) => setEmail(e.currentTarget.value)}
+          />
+          <button>Log In</button>
+        </section>
       </form>
-    </div>
+    </>
   )
 }
 
